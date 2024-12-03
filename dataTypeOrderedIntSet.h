@@ -123,7 +123,7 @@ setReturnValue removeElement(orderedIntSet* s, int elem);
 
  */
 
-orderedIntSet* setIntersection(const orderedIntSet* s1, const orderedIntSet* s2);
+orderedIntSet* setIntersection(const orderedIntSet* s1, const orderedIntSet* s2,const orderedIntSet* hash);
 
 /**
  * @brief     Find the union of two sets: Computes the union of two sets and stores the result in a third set.
@@ -156,5 +156,14 @@ orderedIntSet* setDifference(const orderedIntSet* s1, const orderedIntSet* s2);
  */
 
 setReturnValue printToStdout(const orderedIntSet* s);
+/**
+ * @brief     checks if the given int passed is in a set 
+ *
+ * @param     s  This is the set to be checked,
+ *			  num This is the data point were checking
+ *
+ * @return    Returns either NUMBER_NOT_IN_SET or NUMBER_ALREADY_IN_SET if it is true or not 
+ */
+setReturnValue isInSet(const orderedIntSet* s, int num);
 
 #endif // DATA_TYPE_ORDERED_INT_SET_H

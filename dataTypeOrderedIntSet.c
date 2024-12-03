@@ -75,7 +75,34 @@ setReturnValue removeElement(orderedIntSet* s, int elem) {
 
  */
 
-orderedIntSet* setIntersection(const orderedIntSet* s1, const orderedIntSet* s2) {
+orderedIntSet* setIntersection(const orderedIntSet* s1, const orderedIntSet* s2, orderedIntSet* hash) {
+	if (hash->count != 0) {
+		//if the passed hash set has values stored in it already then is invalid for funtion use 
+		printf("--------------INVALID SET ENTERY---------------\n\n");
+		printf("Passed hash set already has elements included in in\n\n");
+		return ;
+	}
+	else {
+		int localcounter = 0;
+		gotoHead(s1);//go to the start of each set 
+		gotoHead(s2);
+		gotoNextNode(s1);
+		gotoNextNode(s2);
+		while (localcounter != s2->count) {//runs while our counter is smaller than the max of the two given sets count
+			//find out if first number 
+			if (isInSet(s1, s2->current->data) == NUMBER_ALREADY_IN_SET) {
+				addElement(hash, s2->current->data);// number is in set so we add it to our hash set 
+				gotoNextNode(s2);// go to our next node in s2
+			}
+			else {
+				gotoNextNode(s2);// number is not in s1 so we move to our next node 
+			}
+			localcounter++;// intirate our local couner 
+		}
+		return hash;
+	}
+	
+
 
 }
 
@@ -115,4 +142,23 @@ orderedIntSet* setDifference(const orderedIntSet* s1, const orderedIntSet* s2) {
 
 setReturnValue printToStdout(const orderedIntSet* s) {
 
+}
+setReturnValue isInSet(const orderedIntSet* s, int num) {
+	setReturnValue result = NUMBER_ALREADY_IN_SET;
+	int localcounter = 0;
+	gotoHead(s);
+	gotoNextNode(s);
+	while (s->current->data != num) {
+		if (localcounter = s->count) {
+			result = NUMBER_NOT_IN_SET;
+			break;
+		}
+
+		else {
+			localcounter++;
+			gotoNextNode(s);
+		}
+
+	}
+	return result;
 }
