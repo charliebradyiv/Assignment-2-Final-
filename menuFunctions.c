@@ -17,7 +17,7 @@
  */
 void addElementMenu(orderedIntSet* s) {
 	int ElemToBeAdded;
-	printf("Please enter element (enter value <0 to stop):");
+	printf("Please enter element (enter value <0 to stop):\n");
 	scanf_s("%d", &ElemToBeAdded);
 	while (ElemToBeAdded > 0) {
 		addElement(s, ElemToBeAdded);
@@ -33,8 +33,15 @@ void addElementMenu(orderedIntSet* s) {
  * @return   N/a (this is a void function)
  */
 
-void removeElementMenu(int index) {
-
+void removeElementMenu(orderedIntSet* s) {
+	int ElemToBeRemoved;
+	printf("Please enter element (enter value <0 to stop):\n");
+	scanf_s("%d", &ElemToBeRemoved);
+	while (ElemToBeRemoved >= 0) {
+		removeElement(s, ElemToBeRemoved);
+		scanf_s("%d", &ElemToBeRemoved);
+	}
+	return;
 }
 
 /**

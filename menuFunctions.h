@@ -11,7 +11,7 @@
  * @return   N/a (this is a void function)
  */
 
-void addElementMenu(int index);
+void addElementMenu(orderedIntSet* s);
 
 /**
  * @brief    Remove an element from a set: Prompts the user to remove elements from an ordered set, stopping on a negative input, with the updated set being printed once amended.
@@ -20,11 +20,12 @@ void addElementMenu(int index);
  * @return   N/a (this is a void function)
  */
 
-void removeElementMenu(int index);
+
+void removeElementMenu(orderedIntSet* s);
 
 /**
  * @brief    Find the intersection of two sets: Computes the intersection of two sets, stores the result in a third set, and prints out the resulting set.
- *
+ * 
  * @param	 i_1  This is the index for the first set.
  * @param	 i_2  This is the index for the second set.
  * @param	 i_3  This is the index for the third set.
