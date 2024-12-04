@@ -1,2 +1,12 @@
-﻿  menuFunctions.c
-  Project2.vcxproj -> C:\CE4703_CS_3_C\Project2.1-b\x64\Debug\Assignment2.exe
+﻿  main.c
+C:\Users\Charlie Brady\Source\Repos\Assignment-2-Final-\main.c(47,17): warning C4047: 'initializing': 'orderedIntSet *' differs in levels of indirection from 'orderedIntSet **'
+C:\Users\Charlie Brady\Source\Repos\Assignment-2-Final-\main.c(48,17): warning C4047: 'initializing': 'orderedIntSet *' differs in levels of indirection from 'orderedIntSet **'
+C:\Users\Charlie Brady\Source\Repos\Assignment-2-Final-\main.c(49,17): warning C4047: 'initializing': 'orderedIntSet *' differs in levels of indirection from 'orderedIntSet **'
+C:\Users\Charlie Brady\Source\Repos\Assignment-2-Final-\main.c(50,17): warning C4047: 'initializing': 'orderedIntSet *' differs in levels of indirection from 'orderedIntSet **'
+C:\Users\Charlie Brady\Source\Repos\Assignment-2-Final-\main.c(51,17): warning C4047: 'initializing': 'orderedIntSet *' differs in levels of indirection from 'orderedIntSet **'
+C:\Users\Charlie Brady\Source\Repos\Assignment-2-Final-\main.c(52,17): warning C4047: 'initializing': 'orderedIntSet *' differs in levels of indirection from 'orderedIntSet **'
+C:\Users\Charlie Brady\Source\Repos\Assignment-2-Final-\main.c(53,17): warning C4047: 'initializing': 'orderedIntSet *' differs in levels of indirection from 'orderedIntSet **'
+C:\Users\Charlie Brady\Source\Repos\Assignment-2-Final-\main.c(54,17): warning C4047: 'initializing': 'orderedIntSet *' differs in levels of indirection from 'orderedIntSet **'
+C:\Users\Charlie Brady\Source\Repos\Assignment-2-Final-\main.c(55,17): warning C4047: 'initializing': 'orderedIntSet *' differs in levels of indirection from 'orderedIntSet **'
+C:\Users\Charlie Brady\Source\Repos\Assignment-2-Final-\main.c(56,17): warning C4047: 'initializing': 'orderedIntSet *' differs in levels of indirection from 'orderedIntSet **'
+  Project2.vcxproj -> C:\Users\Charlie Brady\source\repos\Assignment-2-Final-\x64\Debug\Assignment2.exe

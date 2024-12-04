@@ -70,6 +70,7 @@ setReturnValue removeElement(orderedIntSet* s, int elem) {
  *
  * @param     s1  This is the first set
  * @param     s2  This is the second set
+ * @param     hash  This is the third set, where the intersection of the two sets will be stored
  * 
  * @return    Returns the value NUMBER REMOVED if elem has been in the set or NUMBER NOT IN SET if elem has not been in the set.
 

@@ -69,10 +69,13 @@ int main() {
 		printf("Your choice: ");
 		
 		//Safeguard to ensure only valid input is recieved.
-		while (scanf_s("%d", &choice) !=1) {
+		if (scanf_s("%d", &choice) != 1) {
 			printf("Error: Invalid input\n");
-			printf("Please enter a valid integer\n");}
-			while(getchar() != '\n'); ///< Clears the input buffer if invalid input is recieved.
+			printf("Please enter a valid integer\n");
+
+			while (getchar() != '\n'); ///< Clears the input buffer if invalid input is recieved.
+			continue;
+		}
 
 		switch (choice) {
 		case 1:
