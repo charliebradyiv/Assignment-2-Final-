@@ -66,11 +66,11 @@ int main() {
 		printf("7) Set difference\n");
 		printf("8) Terminate program\n");
 
-		printf("Your choice: ");
+		printf("\nYour choice:\n");
 		
 		//Safeguard to ensure only valid input is recieved.
 		if (scanf_s("%d", &choice) != 1) {
-			printf("Error: Invalid input\n");
+			printf("\nError: Invalid input\n");
 			printf("Please enter a valid integer\n");
 
 			while (getchar() != '\n'); ///< Clears the input buffer if invalid input is recieved.
@@ -79,33 +79,33 @@ int main() {
 
 		switch (choice) {
 		case 1:
-			printf("Please enter index (0 - 9) for set to be created:  \n\n ");
+			printf("\nPlease enter index (0 - 9) for set to be created:  \n");
 			index = getValidIndex();
 			createOrderedSet(SetArray[index]); ///< Calls the function to create a set
-			printf("Set at index %d created \n\n", index);
+			printf("\nSet at index %d created \n\n", index);
 			break;
 
 		case 2:
-			printf("Please enter index (0 - 9) for set to be deleted:  \n\n");
+			printf("\nPlease enter index (0 - 9) for set to be deleted:  \n");
 			index = getValidIndex();
 			deleteOrderedSet(SetArray[index]); ///< Calls the function to delete a set.
-			printf("Set at index %d deleted \n\n", index);
+			printf("\nSet at index %d deleted \n\n", index);
 			break;
 
 		case 3:
-			printf("Please enter index (0 - 9) for set to add elements to:  \n\n");
+			printf("\nPlease enter index (0 - 9) for set to add elements to:  \n");
 			index= getValidIndex();
 			addElementMenu(SetArray[index]); ///< Calls the relevant menu function to add an element to a set.
 			break;
 
 		case 4:
-			printf("Please enter index (0 - 9) for set to remove elements from: \n\n");
+			printf("\nPlease enter index (0 - 9) for set to remove elements from: \n");
 			index = getValidIndex();
 			removeElementMenu(SetArray[index]); ///< Calls the relevant menu function to remove an element from a set.
 			break;
 
 		case 5:
-			printf("Please enter three indices: two for sets to form intersection of and one for the target set: \n\n");
+			printf("\nPlease enter three indices: two for sets to form intersection of and one for the target set: \n");
 			i_1 = getValidIndex();
 			i_2 = getValidIndex();
 			i_3 = getValidIndex();
@@ -113,7 +113,7 @@ int main() {
 			break;
 
 		case 6:
-			printf("Please enter three indices: two for sets to form union of and one for the target set: \n\n");
+			printf("\nPlease enter three indices: two for sets to form union of and one for the target set: \n");
 			i_1 = getValidIndex();
 			i_2 = getValidIndex();
 			i_3 = getValidIndex();
@@ -121,7 +121,7 @@ int main() {
 			break;
 
 		case 7:
-			printf("Please enter three indices: two for sets to form difference of and one for the target set: \n\n");
+			printf("\nPlease enter three indices: two for sets to form difference of and one for the target set: \n");
 			i_1 = getValidIndex();
 			i_2 = getValidIndex();
 			i_3 = getValidIndex();
@@ -129,14 +129,14 @@ int main() {
 			break;
 
 		case 8:
-			printf("Program terminated.\n");
+			printf("\nProgram terminated.\n");
 
 			return 0;
 
 		//If invalid integer input is recieved, return error message and get user to try again.
 		default:
-			printf("Illegal Input - please enter only values 1 - 8\n");
-			printf("Try again\n\n");
+			printf("\nIllegal Input - please enter only values 1 - 8\n");
+			printf("Try again\n");
 		}
 	}
 

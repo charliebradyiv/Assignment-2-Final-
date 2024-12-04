@@ -18,8 +18,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,7 +36,7 @@
               "RelativeDocumentMoniker": "main.c",
               "ToolTip": "C:\\Users\\Charlie Brady\\source\\repos\\Assignment-2-Final-\\main.c",
               "RelativeToolTip": "main.c",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAQwE0AAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAAAIoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-12-04T10:59:08.352Z",
               "EditorCaption": ""
@@ -43,16 +51,7 @@
               "RelativeToolTip": "dataTypeOrderedIntSet.c",
               "ViewState": "AgIAAD0AAAAAAAAAAAAUwJIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-12-04T11:23:42.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2024-12-04T11:23:42.076Z"
             }
           ]
         }
